@@ -26,13 +26,17 @@ class similarity(object):
         pass
     
 
-    def sim(method_name = "cosine"):
+    def sim(self, method_name = "cosine"):
         '''
         calculate similarity by using a defined method
         
         Parameters
         ----------
         method_name: str | "cosine"
+	
+	Returns
+	-------
+	similarity: np.ndarray
         '''
         assert(type(method_name) == str)
         # TODO
